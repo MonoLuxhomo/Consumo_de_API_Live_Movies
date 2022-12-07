@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 10vh;
+    background-color: #272727;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+}
+
+#titulo,
+#login{
+    display: flex;
+    align-items: center;
+}
+
+#titulo img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+#titulo h1,
+#login h1{
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+#pesquisas{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0 0 0;
+}
+
+#pesquisas h1{
+    color: #000;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#input-container{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+
+#input-container input{
+    width: 50%;
+    height: 50px;
+    border: 1px solid #000;
+    border-radius: 50px;
+    padding: 0 1rem;
+    font-size: 1rem;
+}
+
+#input-container button{
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    right: 27%;
+}
+
+#catalogo{
+    width: 100%;
+    margin: 1rem 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    padding: 0 5%;
+}
+
+.filme{
+    width: 80%;
+    margin: 1rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 5vh;
+    cursor: pointer;
+}
+
+.filme:hover{
+    scale: 1.1;
+}
+
+.filme img{
+    max-width: 100%;
+    width: 350px;
+    height: 350px;
+}
+
+.filme h2{
+    color: #000;
+    font-size: 1rem;
+    margin: 1rem 0 0 0;
+}
